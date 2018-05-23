@@ -18,7 +18,7 @@ namespace Async_Await_DZ
         }
         static async Task Run()
         {
-            using (var dbx = new DropboxClient("YOUR ACCESS TOKEN"))
+            using (var dbx = new DropboxClient("XOrpRMgfzwAAAAAAAAAACGut76H5_JeUMYP21QSvjq91Agy40b7NV5Ptrmaw6PxP"))
             {
                 var full = await dbx.Users.GetCurrentAccountAsync();
                 Console.WriteLine("{0} - {1}", full.Name.DisplayName, full.Email);
